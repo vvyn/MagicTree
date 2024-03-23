@@ -1,7 +1,6 @@
 # MagicTree
-
-# initialize app
-- git clone
 - cd magictree
 - npm install
-- npx expo start
+- npm start
+
+- git checkout -b "name-changes"
