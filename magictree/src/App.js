@@ -19,7 +19,7 @@ import {GeneratedMatches} from './pages/GeneratedMatches.js';
 import { PeoplePersonalities } from './pages/PeoplePersonalities.js';
 import { ProfileMatch } from './pages/ProfileMatch.js';
 import { Transition } from './pages/Transition.js';
-
+import { Career } from './pages/Career.js';
 
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
             <Route exact path = "/PeoplePersonalities" element = {<PeoplePersonalities />}>/</Route>
             <Route exact path = "/ProfileMatch" element = {<ProfileMatch />}>/</Route>
             <Route exact path = "/Transition" element = {<Transition />}>/</Route>
+            <Route exact path = "/Career" element = {<Career />}>/</Route>
         </Routes>
       </Router>
     }
