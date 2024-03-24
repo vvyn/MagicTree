@@ -1,7 +1,4 @@
-import {signUpWithEmail, loginWithEmail } from "../../Firebase.js";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from 'react';
 import Slider from '@mui/material/Slider';
 
 function valuetext(value) {
@@ -15,7 +12,7 @@ export function Survey5() {
     <>
       <div className=" h-screen w-screen bg-[#CAC2AF]">
         <div className="text-center py-2">
-            Hi
+            When faced with a technical challenge, do you rely on empirical evidence and systematic problem-solving techniques or explore creative solutions and unconventional approaches?
         </div>
 
         <Slider
@@ -25,13 +22,16 @@ export function Survey5() {
         valueLabelDisplay="auto"
         shiftStep={1}
         step={1}
-        marks
+        marks={[
+            { value: 0, label: 'Empirical' },
+            { value: 10, label: 'Creative' }
+        ]}
         min={0}
         max={10}
         />
 
         <div className="py-2">
-            <button onClick={() => navigate('/Next')} className="bg-[#2A4223] hover:bg-blue-700 text-white font-bold w-full py-2 px-4 rounded">Next</button>
+            <button onClick={() => navigate('/Survey6')} className="bg-[#2A4223] hover:bg-blue-700 text-white font-bold w-full py-2 px-4 rounded">Next</button>
         </div>
       </div>
     </>
