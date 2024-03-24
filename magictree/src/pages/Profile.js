@@ -62,9 +62,13 @@ export function Profile() {
         <div className=" px-3 pt-6 justify-center text-center">
 
         <FormGroup>
-        <FormControlLabel control={<Checkbox defaultChecked />} label="ACM (Association of Copmuting Machinery) " />
-        <FormControlLabel required control={<Checkbox />} label="Required" />
-        <FormControlLabel disabled control={<Checkbox />} label="Disabled" />
+        <FormControlLabel control={<Checkbox defsaultChecked />} label="Wehack" />
+        <FormControlLabel control={<Checkbox defaultChecked />} label="HackUTD " />
+        <FormControlLabel control={<Checkbox defaultChecked />} label="SWE (Society of Women Engineering) " />
+        <FormControlLabel control={<Checkbox defaultChecked />} label= "NSBE (National Society of Black Engineers)" />
+        <FormControlLabel control={<Checkbox defaultChecked />} label="WICYS (Women in Cybersecurity)" />
+        <FormControlLabel control={<Checkbox defaultChecked />} label="IEEE (Institute of Electrical and Electronics Engineers) " />
+        <FormControlLabel control={<Checkbox defaultChecked />} label="GDSC (Google Developer Student Club) " />
         </FormGroup>
         </div>
       </div>
