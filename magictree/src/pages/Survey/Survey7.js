@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from 'react';
 import Slider from '@mui/material/Slider';
+import Box from '@mui/material/Box';
+
 
 function valuetext(value) {
     return `${value}°C`;
@@ -10,30 +12,38 @@ function valuetext(value) {
 
 export function Survey7() {
   const navigate = useNavigate();
-  
   return (
-    <>
-      <div className=" h-screen w-screen bg-[#CAC2AF]">
-        <div className="text-center py-2">
-            Hi
+    <div className="py-32 h-screen w-screen bg-[#CAC2AF]">
+      <div className=" ">
+        <div className="text-3xl text-center py-2 px-3">
+          Do you excel in analyzing data and optimizing processes for efficiency?
+        </div>
+        <div className="px-48 py-12">
+          <Box sx={{ height: 300 }}>
+            <Slider
+               orientation="vertical"
+               defaultValue={3} // Set default value to 3
+               min={1} // Minimum value of the slider
+               max={10} // Maximum value of the slider
+               step={1} // Step size
+               marks = {[
+                { value: 1, label: '1' },
+                { value: 10, label: '10' }
+              ]}
+               aria-label="Temperature"
+               valueLabelDisplay="auto"
+            />
+          </Box>
+        </div>
+        <div className="text-3xl text-center py-2 px-3">
+          Thrive in brainstorming sessions and proposing groundbreaking ideas? 
         </div>
 
-        <Slider
-        aria-label="Temperature"
-        defaultValue={5}
-        getAriaValueText={valuetext}
-        valueLabelDisplay="auto"
-        shiftStep={1}
-        step={1}
-        marks
-        min={0}
-        max={10}
-        />
-
-        <div className="py-2">
-            <button onClick={() => navigate('/Next')} className="bg-[#2A4223] hover:bg-blue-700 text-white font-bold w-full py-2 px-4 rounded">Next</button>
+       
+        <div className="py-5 px-24">
+            <button onClick={() => navigate('/Next')} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-2 px-4 rounded ">Next</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
