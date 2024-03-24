@@ -4,7 +4,6 @@ import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {Login} from './pages/Login.js';
 import { Profile } from './pages/Profile.js';
-import { ProfileMatch } from './pages/ProfileMatch.js';
 import { Survey1 } from './pages/Survey/Survey1.js';
 import { Survey2 } from './pages/Survey/Survey2.js';
 import { Survey3 } from './pages/Survey/Survey3.js';
@@ -26,7 +25,6 @@ function App() {
         <Routes>
             <Route exact path = "/" element = {<Login />}>/</Route>
             <Route exact path = "/Profile" element = {<Profile />}>/</Route>
-            <Route exact path = "/ProfileMatch" element = {<ProfileMatch />}>/</Route>
             <Route exact path = "/Survey1" element = {<Survey1 />}>/</Route>
             <Route exact path = "/Survey2" element = {<Survey2 />}>/</Route>
             <Route exact path = "/Survey3" element = {<Survey3 />}>/</Route>
