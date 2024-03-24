@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { Canvas, extend, useThree, useFrame } from '@react-three/fiber';
-import TSNE from 'tsne-js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { kmeans } from 'ml-kmeans';
 
@@ -18,15 +17,6 @@ export function PeoplePersonalities() {
   const [outputScaled, setOutputScaled] = useState([]);
 
   useEffect(() => {
-    const model = new TSNE({
-      dim: 3,
-      perplexity: 30.0,
-      earlyExaggeration: 4.0,
-      learningRate: 100.0,
-      nIter: 1000,
-      metric: 'euclidean',
-    });
-
     const inputData = [
         [-5, -2, 5, -3],
         [1, -3, 3, 3],
@@ -81,15 +71,7 @@ export function PeoplePersonalities() {
 
     ];
 
-    model.init({
-      data: inputData,
-      type: 'dense',
-    });
-
-    model.run();
-    const output = model.getOutputScaled();
-
-    const clusters = kmeans(output, 4);
+    const clusters = kmeans(inputData, 4);
 
     const colors = [
         new THREE.Color(1, 0.1, 0.1),
@@ -99,7 +81,7 @@ export function PeoplePersonalities() {
       ];
 
       setOutputScaled(
-        output.map((point, index) => ({
+        inputData.map((point, index) => ({
           position: [point[0] * 10, point[1] * 10, point[2] * 10],
           color: colors[clusters.clusters[index]],
         }))
@@ -114,7 +96,7 @@ export function PeoplePersonalities() {
             <Controls />
             {outputScaled.map((point, index) => (
                 <mesh key={index} position={point.position}>
-                <sphereGeometry args={[0.5, 16, 16]} />
+                <sphereGeometry args={[3, 16, 16]} />
                 <meshBasicMaterial color={point.color} />
                 </mesh>
             ))}
