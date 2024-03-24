@@ -4,7 +4,10 @@ import { useNavigate } from "react-router-dom";
 const images = {
   hat1: './../hat1.png',
   hat2: './../hat2.png',
-  home: './../home.png'
+  home: './../home1.png',
+  home1: './../home2.png',
+  home2: './../home3.png',
+  home3: './../home4.png'
 };
 
 export function Hat() {
@@ -29,7 +32,11 @@ export function Hat() {
     <>
       <div className=" h-screen w-screen bg-[#CAC2AF] flex justify-center items-center">
         <div className={`transition-transform ease-in-out duration-500 ${ctr < 6 ? 'animate-flip' : ''}`}>
+        {currentImg !== images.home ? (
           <img src={currentImg} alt="Hat or Home Page" className="max-w-full h-auto" />
+        ) : (
+          <img src={currentImg} alt="Hat or Home Page" className="max-w-full h-auto" />
+        )}
         </div>
       </div>
     </>
