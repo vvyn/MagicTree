@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import TSNE from 'tsne-js';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import TSNE from 'tsne-js';
+
 
 
 export function Profile() {
-  const [outputScaled, setOutputScaled] = useState([]);
+    const [outputScaled, setOutputScaled] = useState([]);
 
   useEffect(() => {
     const model = new TSNE({
@@ -92,17 +93,21 @@ export function Profile() {
         <div className=" h-screen w-screen bg-[#CAC2AF]">
               <div className='text-center text-3xl py-8'>Profile</div>
 
-      <svg width="400" height="400">
-        {outputScaled.map((point, index) => (
-            <circle
-            key={index}
-            cx={point[0] * 200 + 200}
-            cy={point[1] * 200 + 200}
-            r="3"
-            fill={colors[index % colors.length]}
-            />
-        ))}
-        </svg>
+    return ( 
+        
+        <div className=" h-screen w-screen bg-[#CAC2AF]">
+            <div className='text-center text-3xl py-8'>Profile</div>
+            <svg width="400" height="400">
+            {outputScaled.map((point, index) => (
+                <circle
+                key={index}
+                cx={point[0] * 200 + 200}
+                cy={point[1] * 200 + 200}
+                r="3"
+                fill={colors[index % colors.length]}
+                />
+            ))}
+            </svg>
         
         <Box
       component="form"
