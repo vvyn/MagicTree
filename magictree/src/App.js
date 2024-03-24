@@ -18,6 +18,7 @@ import { Hat } from './pages/Hat.js';
 import {GeneratedMatches} from './pages/GeneratedMatches.js';
 import { PeoplePersonalities } from './pages/PeoplePersonalities.js';
 import { ProfileMatch } from './pages/ProfileMatch.js';
+import { ProfileMatch1 } from './pages/ProfileMatch1.js';
 import { Transition } from './pages/Transition.js';
 
 
@@ -44,6 +45,7 @@ function App() {
             <Route exact path = "/GenMatches" element = {<GeneratedMatches />}>/</Route>
             <Route exact path = "/PeoplePersonalities" element = {<PeoplePersonalities />}>/</Route>
             <Route exact path = "/ProfileMatch" element = {<ProfileMatch />}>/</Route>
+            <Route exact path = "/ProfileMatch1" element = {<ProfileMatch1 />}>/</Route>
             <Route exact path = "/Transition" element = {<Transition />}>/</Route>
         </Routes>
       </Router>
