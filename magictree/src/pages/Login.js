@@ -1,8 +1,6 @@
 import {signUpWithEmail, loginWithEmail } from "../Firebase.js";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useEffect } from 'react';
-
 
 export function Login() {
   const navigate = useNavigate();
@@ -26,6 +24,7 @@ export function Login() {
     loginWithEmail(loginEmail, predefinedPassword)
       .then(() => {
         alert("You have successfully logged in");;
+        navigate('/Survey');
       })
       .catch(error =>{
         console.error(error);
