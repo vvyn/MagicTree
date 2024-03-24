@@ -53,7 +53,7 @@ export function Login() {
           <div className="text-center pt-2 text-xl">
             Have an account?
           </div>
-          <div className="px-24 py-2 justify-center text-center ">
+          <div className="px-16 py-2 justify-center text-center ">
               <input type="email" id="registerEmail" style={{ width: 300 }} className="block max-w-full lg:max-w-md rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Email" value={loginEmail} onChange={(e) => setLoginEmail(e.target.value)}/>
               <div className="py-2">
                     <button onClick={handleEmailLogin} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-2 px-4 rounded" style={{ width: 300 }}>Login</button> 
@@ -64,7 +64,7 @@ export function Login() {
             <div className="text-center pt-2 text-xl">
                 Don't have an account?
             </div>
-            <div className="px-24 py-2 justify-center text-center ">
+            <div className="px-16 py-2 justify-center text-center ">
                 <input type="email" id="registerEmail" style={{ width: 300 }} className="block max-w-full lg:max-w-md rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 <div className="py-2">
                     <button onClick={handleEmailSignUp} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-2 px-4 rounded">Sign Up</button>
