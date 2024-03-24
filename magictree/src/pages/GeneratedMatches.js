@@ -3,7 +3,7 @@ import ProfileCard from './ProfileCards';
 
 export const GeneratedMatches = () => {
   return (
-    <div className="container mx-auto px-4 py-3 bg-[#CAC2AF] ">
+    <div className="container mx-auto px-4 py-3 bg-[#CAC2AF]">
       <div className="py-4 ">
          <ProfileCard
           name="Ava Brown"
