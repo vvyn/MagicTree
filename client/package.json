@@ -22,7 +22,9 @@
     "three": "^0.162.0",
     "tsne-js": "^1.0.3",
     "web-vitals": "^2.1.4"
-  },  "scripts": {
+  },
+  "homepage": "https://vvyn.github.io/Sorcerers-Sprouts",
+  "scripts": {
     "start": "react-scripts start",
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
