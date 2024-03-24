@@ -88,6 +88,10 @@ export function Profile() {
   }, []);
 
   const colors = ['red', 'green', 'blue', 'yellow'];
+    return ( 
+        
+        <div className=" h-screen w-screen bg-[#CAC2AF]">
+              <div className='text-center text-3xl py-8'>Profile</div>
 
     return ( 
         
