@@ -50,7 +50,11 @@ export function Resources() {
             </div>
 
 
-            
+            <div className=''>
+                    <button className="bg-[#2A4223] hover:bg-[#305127] text-white text-xl font-bold w-full mt-20 py-5 px-4 rounded" onClick={() => navigate('/Career')}>
+                     Back
+                    </button> 
+                </div>
             
 
         

@@ -27,6 +27,12 @@ export const Transition = () => {
                      Career Development
                     </button> 
                 </div>
+
+                <div className=''>
+                    <button className="bg-[#2A4223] hover:bg-[#305127] text-white text-xl font-bold w-full mt-52 py-5 px-4 rounded" onClick={() => navigate('/Hat')}>
+                     Back
+                    </button> 
+                </div>
                
             </div>
         </div>

@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { Canvas, extend, useThree, useFrame } from '@react-three/fiber';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { kmeans } from 'ml-kmeans';
+import { useNavigate } from "react-router-dom";
 
 extend({ OrbitControls });
 
@@ -15,6 +16,7 @@ function Controls() {
 
 export function PeoplePersonalities() {
   const [outputScaled, setOutputScaled] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const inputData = [
@@ -90,8 +92,8 @@ export function PeoplePersonalities() {
 
   return (
     <div>
-        <div className='bg-[#CAC2AF] text-3xl text-center text'>Personalitity Compatibility</div>
-        <Canvas style={{ height: '100vh', backgroundColor: '#CAC2AF'}}>
+        <div className='bg-[#CAC2AF] text-3xl text-white text-4xl lg:text-4xl font-bold text-center text'>Solar System</div>
+        <Canvas style={{ height: '89vh', backgroundColor: '#CAC2AF'}}>
             <ambientLight intensity={Math.PI / 2} />
             <Controls />
             {outputScaled.map((point, index) => (
@@ -101,6 +103,11 @@ export function PeoplePersonalities() {
                 </mesh>
             ))}
         </Canvas>
+        <div className=''>
+                    <button className="bg-[#2A4223] hover:bg-[#305127] text-white text-xl font-bold w-full py-5 px-4 rounded" onClick={() => navigate('/Transition')}>
+                     Back
+                    </button> 
+                </div>
     </div>
   );
 }

@@ -1,7 +1,10 @@
 import React from 'react';
 import ProfileCard from './ProfileCards';
+import { useNavigate } from "react-router-dom";
 
 export const GeneratedMatches = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="container mx-auto px-4 py-3 bg-[#CAC2AF]">
       <div className="py-4 ">
@@ -40,6 +43,11 @@ export const GeneratedMatches = () => {
           avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCcJKlkD0jgxu_zvB-2QiuD7V3YAq75r9NtA&usqp=CAU"
         />
       </div>
+      <div className=''>
+                    <button className="bg-[#2A4223] hover:bg-[#305127] text-white text-xl font-bold w-full mt-20 py-5 px-4 rounded" onClick={() => navigate('/Transition')}>
+                     Back
+                    </button> 
+                </div>
       
     </div>
   );

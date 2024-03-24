@@ -1,11 +1,5 @@
-
-
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
-
-
 
 
 
@@ -15,7 +9,7 @@ export function Internship() {
     <>
       <div className="h-screen w-screen bg-[#CAC2AF] flex justify-center items-center">
         <div>
-          <div className="flex text-white justify-center text-4xl lg:text-4xl font-bold">
+          <div className="mb-20 flex text-white justify-center text-4xl lg:text-4xl font-bold">
             Research Opportunities
           </div>
 
@@ -61,7 +55,11 @@ export function Internship() {
             
             
 
-        
+            <div className=''>
+                    <button className="bg-[#2A4223] hover:bg-[#305127] text-white text-xl font-bold w-full mt-20 py-5 px-4 rounded" onClick={() => navigate('/Career')}>
+                     Back
+                    </button> 
+                </div>
           </div>
         </div>
       </div>
