@@ -4,11 +4,9 @@ import Chart from "chart.js/auto";
 import {
   Typography,
   Grid,
-  Paper,
   TableContainer,
   useMediaQuery,
   useTheme,
-  Button,
 } from "@mui/material";
 
 
@@ -109,7 +107,8 @@ export const ProfileMatch = () => {
   
 
   return (
-    <Grid container spacing={2}>
+    <div className=" h-screen w-screen bg-[#CAC2AF] " >
+    <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
        
           <Typography variant="h6" gutterBottom>
@@ -137,5 +136,6 @@ export const ProfileMatch = () => {
 
    
     </Grid>
+</div>
   );
 };
