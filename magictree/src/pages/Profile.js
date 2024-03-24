@@ -61,6 +61,7 @@ export function Profile() {
     />
         <div className=" px-3 pt-6 justify-center text-center">
 
+        
         <FormGroup>
         <FormControlLabel control={<Checkbox defsaultChecked />} label="Wehack" />
         <FormControlLabel control={<Checkbox defaultChecked />} label="HackUTD " />

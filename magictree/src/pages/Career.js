@@ -13,13 +13,13 @@ export function Career() {
 
             <div>
                 <div className="py-5 px-24">
-                    <button onClick={() => navigate('/Sample')} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-3 px-6 rounded ">Internships / Co-ops</button>
+                    <button onClick={() => navigate('/Internship')} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-3 px-6 rounded ">Internships / Co-ops</button>
                 </div>
                 <div className="py-5 px-24">
-                    <button onClick={() => navigate('/Sample')} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-3 px-6 rounded ">Top Resources</button>
+                    <button onClick={() => navigate('/Resources')} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-3 px-6 rounded ">Top Resources</button>
                 </div>
                 <div className="py-5 px-24">
-                    <button onClick={() => navigate('/Sample')} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-3 px-6 rounded ">Research Opportunities</button>
+                    <button onClick={() => navigate('/Research')} className="bg-[#2A4223] hover:bg-[#305127] text-white font-bold w-full py-3 px-6 rounded ">Research Opportunities</button>
                 </div>
             </div>
         </div>

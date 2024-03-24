@@ -23,7 +23,7 @@ export const Transition = () => {
                     </button> 
                 </div>
                 <div className=''>
-                    <button className="bg-[#2A4223] hover:bg-[#305127] text-white text-xl font-bold w-full py-5 px-4 rounded">
+                    <button className="bg-[#2A4223] hover:bg-[#305127] text-white text-xl font-bold w-full py-5 px-4 rounded" onClick={() => navigate('/Career')}>
                      Career Development
                     </button> 
                 </div>
