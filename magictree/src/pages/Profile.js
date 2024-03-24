@@ -88,10 +88,17 @@ export function Profile() {
   }, []);
 
   const colors = ['red', 'green', 'blue', 'yellow'];
-    return ( 
-        
-        <div className=" h-screen w-screen bg-[#CAC2AF]">
-              <div className='text-center text-3xl py-8'>Profile</div>
+
+  const majors = [
+    { label: 'Computer Science'},
+    { label: 'Software Engineering'},
+    { label: 'Computer Engineering '},
+    { label: 'Eectrical Engineering'},
+    { label: 'Mechanical Engineering'},
+    { label: 'Biomedical Engineering'},
+    
+
+];
 
     return ( 
         
@@ -157,14 +164,3 @@ export function Profile() {
 
     
 }
-
-const majors = [
-    { label: 'Computer Science'},
-    { label: 'Software Engineering'},
-    { label: 'Computer Engineering '},
-    { label: 'Eectrical Engineering'},
-    { label: 'Mechanical Engineering'},
-    { label: 'Biomedical Engineering'},
-    
-
-];
