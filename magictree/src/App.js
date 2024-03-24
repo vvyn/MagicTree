@@ -14,6 +14,7 @@ import { Survey8 } from './pages/Survey/Survey8.js';
 import { Survey9 } from './pages/Survey/Survey9.js';
 import { Survey10 } from './pages/Survey/Survey10.js';
 import { Hat } from './pages/Hat.js';
+import { Profile } from './pages/Profile.js';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route exact path = "/Survey9" element = {<Survey9 />}>/</Route>
             <Route exact path = "/Survey10" element = {<Survey10 />}>/</Route>
             <Route exact path = "/Hat" element = {<Hat />}>/</Route>
+            <Route exact path = "/Profile" element = {<Profile />}>/</Route>
         </Routes>
       </Router>
     }
