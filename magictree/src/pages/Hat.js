@@ -35,7 +35,11 @@ export function Hat() {
         {currentImg !== images.home ? (
           <img src={currentImg} alt="Hat or Home Page" className="max-w-full h-auto" />
         ) : (
-          <img src={currentImg} alt="Hat or Home Page" className="max-w-full h-auto" />
+          <div>
+            <img src={currentImg} alt="Hat or Home Page" className="max-w-full h-auto" />
+            <button> </button>
+          </div>
+          
         )}
         </div>
       </div>
