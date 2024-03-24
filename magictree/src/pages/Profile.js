@@ -9,9 +9,7 @@ import Checkbox from '@mui/material/Checkbox';
 
 
 export function Profile() {
-
     return ( 
-        
         <div className=" h-screen w-screen bg-[#CAC2AF]">
         
         <Box
@@ -26,29 +24,34 @@ export function Profile() {
       noValidate
       autoComplete="off"
     >
-      <div className="px-3 justify-center text-center ">
-      
-      <TextField id="standard-basic" label="First Name"   color="success" variant="standard" />
-      <br/>
-    
-      <TextField id="standard-basic" label="Last Name"  color="success"  variant="standard" />
-      
-      <br/>
-      <br/>
-      
-      <div className=" px-3 justify-center text-center">
+      <div class="text-white text-lg text-6xl lg:text-6xl pl-5 pt-5 pb-5 font-bold">
+        Your Profile
+      </div>
+
+      <div className="px-3 flex-row pt-3 pl-10 items-center justify-center v-screen">
+          
+          <TextField id="standard-basic" label="First Name"   color="success" variant="standard" sx={{ width: 350 }}/>
+          <br/>   
+      </div>
+
+      <div className="px-3 flex-row pt-3 pl-10 items-center justify-center v-screen">
+          <TextField id="standard-basic" label="Last Name"  color="success"  variant="standard" sx={{ width: 350 }}/>
+          
+          <br/>
+          <br/>
+      </div>
+      <div className=" px-3 pt-6 pl-10 justify-center text-center">
       <Autocomplete
       disablePortal
       id="combo-box-demo"
       options={majors}
-      sx={{ width: 215 }}
+      sx={{ width: 350 }}
       renderInput={(params) => <TextField {...params} label="Major" />}
     />
-        </div>
-        <div>
+        <div className=" px-3 pt-6 justify-center text-center">
 
         <FormGroup>
-        <FormControlLabel control={<Checkbox defaultChecked />} label="ACM (Association of Copmuting Machinery " />
+        <FormControlLabel control={<Checkbox defaultChecked />} label="ACM (Association of Copmuting Machinery) " />
         <FormControlLabel required control={<Checkbox />} label="Required" />
         <FormControlLabel disabled control={<Checkbox />} label="Disabled" />
         </FormGroup>
