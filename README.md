@@ -1,16 +1,4 @@
-# MagicTree
-- cd magictree
-- npm install
-- npm start
+# 🌱Sorcerer's Sprouts
+The ultimate freshman support program designed to empower students to network, learn, and find support; ensuring a successful and fulfilling college experience.
 
-
-# make new branch
-- git checkout -b "name-changes"
-
-
-# new changes
-- git add .
-- git commit -m "msg"
-- git fetch
-- git pull
-- git push
+![sorcerorsprouts](https://github.com/vvyn/Sorcerers-Sprouts/assets/62407356/32762552-c92e-42d0-a806-433aff6bbbd2)
