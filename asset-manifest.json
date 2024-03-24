@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Sorcerers-Sprouts/static/css/main.f98e3af8.css",
-    "main.js": "/Sorcerers-Sprouts/static/js/main.e3c5f281.js",
+    "main.js": "/Sorcerers-Sprouts/static/js/main.6113e27c.js",
     "index.html": "/Sorcerers-Sprouts/index.html",
     "main.f98e3af8.css.map": "/Sorcerers-Sprouts/static/css/main.f98e3af8.css.map",
-    "main.e3c5f281.js.map": "/Sorcerers-Sprouts/static/js/main.e3c5f281.js.map"
+    "main.6113e27c.js.map": "/Sorcerers-Sprouts/static/js/main.6113e27c.js.map"
   },
   "entrypoints": [
     "static/css/main.f98e3af8.css",
-    "static/js/main.e3c5f281.js"
+    "static/js/main.6113e27c.js"
   ]
 }
