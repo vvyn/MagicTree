@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
+import TSNE from 'tsne-js';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
@@ -9,8 +10,31 @@ import Checkbox from '@mui/material/Checkbox';
 
 
 export function Profile() {
+
+  const majors = [
+    { label: 'Computer Science'},
+    { label: 'Software Engineering'},
+    { label: 'Computer Engineering '},
+    { label: 'Eectrical Engineering'},
+    { label: 'Mechanical Engineering'},
+    { label: 'Biomedical Engineering'},
+    
+
+];
     return ( 
         <div className=" h-screen w-screen bg-[#CAC2AF]">
+            <div className='text-center text-3xl py-8'>Profile</div>
+            <svg width="400" height="400">
+            {outputScaled.map((point, index) => (
+                <circle
+                key={index}
+                cx={point[0] * 200 + 200}
+                cy={point[1] * 200 + 200}
+                r="3"
+                fill={colors[index % colors.length]}
+                />
+            ))}
+            </svg>
         
         <Box
       component="form"
@@ -65,14 +89,3 @@ export function Profile() {
 
     
 }
-
-const majors = [
-    { label: 'Computer Science'},
-    { label: 'Software Engineering'},
-    { label: 'Computer Engineering '},
-    { label: 'Eectrical Engineering'},
-    { label: 'Mechanical Engineering'},
-    { label: 'Biomedical Engineering'},
-    
-
-];

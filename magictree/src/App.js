@@ -36,7 +36,6 @@ function App() {
             <Route exact path = "/Survey9" element = {<Survey9 />}>/</Route>
             <Route exact path = "/Survey10" element = {<Survey10 />}>/</Route>
             <Route exact path = "/Hat" element = {<Hat />}>/</Route>
-
         </Routes>
       </Router>
     }
