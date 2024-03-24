@@ -2,14 +2,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import Chart from "chart.js/auto";
 import {
-  Typography,
-  Grid,
-  TableContainer,
-  useMediaQuery,
-  useTheme,
+    Typography,
+    Grid,
+    TableContainer,
+    useMediaQuery,
+    useTheme,
 } from "@mui/material";
 
-export const ProfileMatch = () => {
+export const ProfileMatch1 = () => {
   const radarChartRef = useRef(null);
   
   const theme = useTheme();
@@ -48,8 +48,8 @@ export const ProfileMatch = () => {
                     pointHoverBorderColor: 'rgb(47, 59, 45)'
               },
               {
-                    label: 'Ava Brown Profile Match',
-                    data: [2,9,3,5,8,1,7,5],
+                    label: 'John Doe Profile Match',
+                    data: [9,2,4,5,1,8,6,5],
                     fill: true,
                     backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     borderColor: 'rgb(54, 162, 235)',
