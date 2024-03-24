@@ -43,7 +43,7 @@ export function Login() {
     <>
       <div className=" h-screen w-screen bg-[#CAC2AF] justify-center items-center flex flex-col">
       <div class="text-white text-4xl lg:text-4xl pl-5 pr-5 pt-5 font-bold">
-        APP NAME
+        Sorcerer Sprouts
       </div>
         <div className="flex justify-center ">
             <img src={currentImg} alt="Hat" className="w-3/4 h-auto" />

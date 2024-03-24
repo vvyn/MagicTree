@@ -20,6 +20,10 @@ import { PeoplePersonalities } from './pages/PeoplePersonalities.js';
 import { ProfileMatch } from './pages/ProfileMatch.js';
 import { ProfileMatch1 } from './pages/ProfileMatch1.js';
 import { Transition } from './pages/Transition.js';
+import { Career } from './pages/Career.js'
+import { Resources } from './pages/Resources.js'
+import { Research } from './pages/Research.js'
+import { Internship } from './pages/Internship.js'
 
 
 
@@ -47,6 +51,10 @@ function App() {
             <Route exact path = "/ProfileMatch" element = {<ProfileMatch />}>/</Route>
             <Route exact path = "/ProfileMatch1" element = {<ProfileMatch1 />}>/</Route>
             <Route exact path = "/Transition" element = {<Transition />}>/</Route>
+            <Route exact path = "/Career" element = {<Career />}>/</Route>
+            <Route exact path = "/Resources" element = {<Resources />}>/</Route>
+            <Route exact path = "/Research" element = {<Research />}>/</Route>
+            <Route exact path = "/Internship" element = {<Internship />}>/</Route>
         </Routes>
       </Router>
     }
